@@ -13,4 +13,8 @@ CREATE TABLE AREAS(SL_NO INT,NAME varchar(10),LANDMARK varchar(10),PIN_CODE INT,
          insert into AREAS VALUES (9,'shantinagar','KALYANI',401165,'residential');
           insert into AREAS VALUES (10,'banashankari','xworkz',25222,'residential');
           SELECT * FROM AREAS;
-        
+SELECT * FROM AREAS order by SL_NO;
+SELECT NAME , LANDMARK FROM AREAS order by SL_NO DESC;
+select * FROM AREAS WHERE  NAME='vijaynagar' or SL_NO=1 ;
+select * from AREAS where sl_no between 10 and 100;
+        select * from AREAS where sl_no not in (3 , 6);
